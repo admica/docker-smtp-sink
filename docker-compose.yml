@@ -1,0 +1,11 @@
+version: '1'
+
+services:
+  smtp_sink:
+    image: smtp_sink:1.0
+    container_name: smtp_sink
+    restart: always
+    ports:
+      - "25:25"
+    env_file:
+      - smtp_sink.env
