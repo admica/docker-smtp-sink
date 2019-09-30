@@ -1,5 +1,5 @@
 #!/bin/bash
-#
+
 # build the image
 docker image build -t smtp_sink:1.0 .
 
